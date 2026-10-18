@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --gold-500: hsl(31, 77%, 52%);
+  --Cyan-800: hsl(184, 100%, 22%);
+  --Green-950: hsl(179, 100%, 13%);
+
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Gray-100: hsl(0, 0%, 95%);
+}
+
+body {
+  margin: auto;
+  max-width: 1440px;
+  background-color: var(--Gray-100);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.card-container {
+  display: flex;
+  width: 920px;
+  min-height: 500px;
+  max-width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card {
+  flex: 1;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sedan {
+  background-color: var(--gold-500);
+}
+
+.suv {
+  background-color: var(--Cyan-800);
+}
+
+.luxury {
+  background-color: var(--Green-950);
+}
+
+.car-icon {
+  width: 64px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 28px;
+}
+
+.card h2 {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--Gray-100);
+  margin-bottom: 28px;
+}
+
+.card p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--paragraph);
+  margin-bottom: 30px;
+}
+
+.learn-more {
+  width: 146px;
+  height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Gray-100);
+  border: 2px solid var(--Gray-100);
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+.sedan .learn-more { 
+  color: var(--gold-500);
+}
+
+.suv .learn-more {
+  color: var(--Cyan-800);
+}
+
+.luxury .learn-more {
+  color: var(--Green-950);
+}
+.learn-more:hover {
+  background-color: transparent;
+  color: var(--Gray-100);
+  transition: all 0.3s ease-in-out;
+}
+/* ======================== */
